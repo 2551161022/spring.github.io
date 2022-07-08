@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --main-color:#fee5f8;
+        --font-color:#3f3c3f;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    body{
+        position: relative;
+        font-family: Helvetica;
+        color: var(--font-color);
+        background: linear-gradient(90deg,var(--main-color),rgba(255,255,255));
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        position: relative;
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    main::before, header::before{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        background-color: rgb(238, 52, 207);
+        bottom: 0;
+        transform: scale(1,0.4);
+    }
+    main{
+        position: relative;
+        color: var(--font-color);
+        padding-bottom: 20px;
+    }
+    .title{
+        display: block;
+        padding-left: 10px;
+        background: white;
+        box-shadow: #e4e2e4 0px 3px 10px;
+    }
+    .contant{
+        padding: 5px;
+        font-size: 1rem;
+    }
+    .contant li{
+        margin-top: 10px;
+    }
+    footer .contant{
+        position: relative;
+        font-size: 0.8rem;
+        margin: 5px;
+    }
+    .flower{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(30deg,var(--main-color),rgb(255,255,255));
+        right: 20px;
+        bottom: -150px;
+        border-radius: 50%;
+        box-shadow: #dcdbdc -5px 5px 15px,rgb(255, 255, 255) 3px -3px 10px;
+        transition: .5s;
+    }
+    .flower:hover{
+        box-shadow: rgb(255, 255, 255) 3px -3px 10px,#272727 -5px 5px 20px;
+    }
+
+</style>
+<body>
+    <header>
+        <h1 class="hello">Hi!</h1>
+    </header>
+    <main>
+        <div class="skills">
+            <h1 class = "title">Skills</h1>
+            <div class="contant">
+                <li>常用编程语言为java,javascript,此外还会其它的编程语言如C,Rust,Solidity.</li>
+                    
+                
+                <li>熟悉java后端开发和基础前端开发.</li>
+                <li>熟悉Solidity智能合约,Web3.js,了解Uniswap等去中心化交易所,ERC20,ERC721等.</li>
+                <li>熟悉各大交易所API,经常开发量化交易的程序</li>
+            </div>
+        </div>
+        <div>
+            <h1 class = "title">My Project</h1>
+            <div class="contant">
+                <li>快速开发中心化交易所量化机器人工具(java): <a href="https://gitee.com/Xiao--Meng/exchanges_tools">https://gitee.com/Xiao--Meng/exchanges_tools</a> </li>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h1 class = "title">About me</h1>
+        <div class="contant">
+            项目和作,量化策略开发欢迎联系:
+            <li>Wechat:mmd520rfm</li>
+            <li>Email:mengrfm@gmail.com</li>
+            <li>Phone:15881720397</li>
+        </div>
+        <div class="flower">
+            
+        </div>
+    </footer>
+</body>
+</html>
